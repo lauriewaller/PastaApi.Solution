@@ -74,6 +74,21 @@ namespace PastaApi.Controllers
       return NoContent();
     }
 
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeletePasta(int id)
+    {
+      var pasta = await _db.Pastas.FindAsync(id);
+      if (pasta == null)
+      {
+        return NotFound();
+      }
+
+      _db.Pastas.Remove(pasta);
+      await _db.SaveChangesAsync();
+
+      return NoContent();
+    }
+
     private bool PastaExists(int id)
     {
       return _db.Pastas.Any(e => e.PastaId == id);
