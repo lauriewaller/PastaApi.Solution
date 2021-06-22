@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PastaApi.Models;
+using System.Linq;
+
 
 namespace PastaApi.Controllers
 {
@@ -41,6 +43,40 @@ namespace PastaApi.Controllers
         }
 
         return pasta;
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put(int id, Pasta pasta)
+    {
+      if (id != pasta.PastaId)
+      {
+        return BadRequest();
+      }
+
+      _db.Entry(pasta).State = EntityState.Modified;
+
+      try
+      {
+        await _db.SaveChangesAsync();
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!PastaExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+
+      return NoContent();
+    }
+
+    private bool PastaExists(int id)
+    {
+      return _db.Pastas.Any(e => e.PastaId == id);
     }
   }
 }
