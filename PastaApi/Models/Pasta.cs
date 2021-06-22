@@ -13,7 +13,8 @@ namespace PastaApi.Models
     [Required]
     public bool GlutenFree { get; set; }
     public string SauceType { get; set; }
-    public List<string> Ingredients { get; set; }
+    [StringLength(1000)]
+    public string Ingredients { get; set; }
     [Required]
     public string Origin { get; set; }
     public string Url { get; set; }
