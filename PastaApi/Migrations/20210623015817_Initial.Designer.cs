@@ -8,8 +8,8 @@ using PastaApi.Models;
 namespace PastaApi.Migrations
 {
     [DbContext(typeof(PastaApiContext))]
-    [Migration("20210622023655_PastaToPastas")]
-    partial class PastaToPastas
+    [Migration("20210623015817_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

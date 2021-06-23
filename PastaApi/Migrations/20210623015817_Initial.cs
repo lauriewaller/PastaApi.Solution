@@ -8,7 +8,7 @@ namespace PastaApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Pasta",
+                name: "Pastas",
                 columns: table => new
                 {
                     PastaId = table.Column<int>(type: "int", nullable: false)
@@ -24,21 +24,21 @@ namespace PastaApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pasta", x => x.PastaId);
+                    table.PrimaryKey("PK_Pastas", x => x.PastaId);
                 });
 
             migrationBuilder.InsertData(
-                table: "Pasta",
+                table: "Pastas",
                 columns: new[] { "PastaId", "GlutenFree", "ImageUrl", "Ingredients", "Name", "NoodleType", "Origin", "SauceType", "Url" },
                 values: new object[] { 1, false, "https://www.modernhoney.com/wp-content/uploads/2018/08/Fettuccine-Alfredo-Recipe-1.jpg", "Pasta, tomatoes", "Fettucini Alfredo", "Fettucini", "Italy", "Creamy", "https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/" });
 
             migrationBuilder.InsertData(
-                table: "Pasta",
+                table: "Pastas",
                 columns: new[] { "PastaId", "GlutenFree", "ImageUrl", "Ingredients", "Name", "NoodleType", "Origin", "SauceType", "Url" },
                 values: new object[] { 2, true, "www.url.com/image", "Pasta tomatoes", "Cacio E Pepe", "Dinosaur", "Italy", "Tomatoey", "www.url.com" });
 
             migrationBuilder.InsertData(
-                table: "Pasta",
+                table: "Pastas",
                 columns: new[] { "PastaId", "GlutenFree", "ImageUrl", "Ingredients", "Name", "NoodleType", "Origin", "SauceType", "Url" },
                 values: new object[] { 3, false, "www.url.com/image", "fettucini, tomato, basil, ground beef, parmesan", "Spaghetti", "Fettucini", "Italy", "Tomato Basil", "https://www.allrecipes.com/recipe/158140/spaghetti-sauce-with-ground-beef/" });
         }
@@ -46,7 +46,7 @@ namespace PastaApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Pasta");
+                name: "Pastas");
         }
     }
 }
