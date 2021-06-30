@@ -6,19 +6,19 @@ namespace PastaApi.Models
   public class Pasta
   {
     public int PastaId { get; set; }
-    [Required]
+    //[Required]
     public string Name { get; set; }
-    [Required]
+    //[Required]
     public string NoodleType { get; set; }
-    [Required]
+    //[Required]
     public bool GlutenFree { get; set; }
     public string SauceType { get; set; }
     [StringLength(1000)]
     public string Ingredients { get; set; }
-    [Required]
+    //[Required]
     public string Origin { get; set; }
     public string Url { get; set; }
-    [Required]
+    //[Required]
     public string ImageUrl { get; set; }
   }
 }

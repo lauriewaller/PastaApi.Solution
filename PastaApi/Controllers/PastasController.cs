@@ -45,6 +45,7 @@ namespace PastaApi.Controllers
 
       return query.ToList();
     }
+    
     // GET: api/Pastas/5
     [HttpGet("{id}")]
     public async Task<ActionResult<Pasta>> GetPasta(int id)
