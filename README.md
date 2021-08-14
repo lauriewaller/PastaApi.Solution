@@ -14,7 +14,7 @@
 * MySQL Workbench
 
 ## Description
-This API follows RESTful principles and provides create, read, update, and delete functionality. Developers can filter GET requests using Origin and SauceType parameters. This API is a practice application written for homework exercises for Epicodus coding school. To view the UI for this API, see the [Pasta.Solution repo](https://github.com/lauriewaller/PastaApi.Solution). 
+This API follows RESTful principles and provides create, read, update, and delete functionality. Developers can filter GET requests using Origin and SauceType parameters. This API is a practice application written for homework exercises for Epicodus coding school. To view the UI for this API, see the [PastaClient.Solution repo](https://github.com/lauriewaller/PastaApi.Solution). 
 
 ## Prerequisites
 
