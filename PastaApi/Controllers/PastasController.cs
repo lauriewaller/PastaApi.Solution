@@ -36,13 +36,6 @@ namespace PastaApi.Controllers
         query = query.Where(entry => entry.SauceType == sauceType);
       }
 
-
-
-      // if (glutenFree == true || glutenFree == false)
-      // {
-      //  query = query.Where(entry => entry.GlutenFree == glutenFree);
-      // }
-
       return query.ToList();
     }
     
