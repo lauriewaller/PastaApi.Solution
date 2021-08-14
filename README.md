@@ -14,7 +14,7 @@
 * MySQL Workbench
 
 ## Description
-This API follows RESTful principles and provides create, read, update, and delete functionality. Developers can filter GET requests using Origin and SauceType parameters. This API is a practice application written for homework exercises for Epicodus coding school. To view the UI for this API, see the [PastaClient.Solution repo](https://github.com/lauriewaller/PastaApi.Solution). 
+This API follows RESTful principles and provides create, read, update, and delete functionality. Developers can filter GET requests using Origin and SauceType parameters. This API is a practice application written for homework exercises for Epicodus coding school. To view the UI for this API, see the [PastaClient.Solution repo](https://github.com/lauriewaller/PastaClient.Solution). 
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ This API follows RESTful principles and provides create, read, update, and delet
   2. In the top righthand corner of the list of files, click the Code dropdown menu.
   3. Click on the clipboard icon to copy the URL to the GitHub repo.
   4. On your computer, open Terminal and navigate to the folder where you plan to clone the repo folder.
-  5. Type in `git clone` and then paste the URL you copied: `git clone https://github.com/lauriewaller/Parks.Solution`. Press Enter.
+  5. Type in `git clone` and then paste the URL you copied: `git clone https://github.com/lauriewaller/PastaApi.Solution`. Press Enter.
   6. To open your files in [Visual Studio Code](https://code.visualstudio.com/),
   navigate to Parks.Solution in Terminal, type `code .`, and press Enter. This will open the application files in VS Code.
   7. In the Parks directory, create the file `appsettings.json`. Add the following code and save the file:
